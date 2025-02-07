@@ -77,9 +77,9 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header className="md:block hidden sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-14 items-center">
-          <nav className="flex items-center space-x-4 lg:space-x-6">
+          <nav className="flex items-center space-x-4 lg:space-x-6 px-10">
             <a href="#home" className="text-sm font-medium transition-colors hover:text-primary">
               Home
             </a>
@@ -147,13 +147,13 @@ export default function Home() {
                   />
                 </div>
                 <div
-                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 glass-effect p-4 rotate-6 animate-float"
+                  className="md:block hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 glass-effect p-4 rotate-6 animate-float"
                   style={{ animationDelay: "2s" }}
                 >
                   <p className="text-lg font-semibold">Étudiant en Ingénierie Informatique</p>
                 </div>
                 <div
-                  className="absolute bottom-0 right-0 glass-effect p-4 -rotate-6 animate-float"
+                  className="md:block hidden absolute bottom-0 right-0 glass-effect p-4 -rotate-6 animate-float"
                   style={{ animationDelay: "1s" }}
                 >
                   <p className="text-lg font-semibold">10+ Projets Réalisés</p>

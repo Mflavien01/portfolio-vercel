@@ -6,7 +6,7 @@ import type React from "react" // Import React
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Developer Portfolio",
+  title: "Portfolio - Flavien",
   description: "A showcase of my projects and skills",
 }
 
@@ -16,7 +16,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="fr">
+      <head>
+        <link rel="icon" type="image/png" href="/favicon.png" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )
